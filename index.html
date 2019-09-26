@@ -7,7 +7,26 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <style>
-        li {color: #D32C25;
+        /*
+        li {color: darkgreen;
+        
+        }
+*/
+
+        .nintendo-red {
+            color: #D32C25;
+        }
+
+        .nintendo-font-big {
+            font-size: 30px;
+        }
+
+        #nintendo-font-heavy {
+            font-weight: 900;
+        }
+
+        #content p {
+            color: #00ff00;
         }
     </style>
 
@@ -24,8 +43,8 @@
         </nav>
     </header>
     <main>
-        <h1 style="color:darkred">A heading 1</h1>
-        <h2>a sub-heading</h2><br>
+        <h1 class="nintendo-red">A heading 1</h1>
+        <h2 style="color:darkblue">a sub-heading</h2><br>
 
 
 
@@ -33,9 +52,9 @@
         <p>This is another paragraph with <sub>subscript</sub> and <sup>superscript</sup> elements</p>
 
         <ul>
-            <li>first item &lt; second item</li>
-            <li style="color:black">Hello this is a different color item</li>
-            <li>second&nbsp;item &gt; first item</li>
+            <li class="nintendo-red">first item &lt; second item</li>
+            <li style="color:darkgreen">Hello this is a different color item</li>
+            <li id="nintendo-font-heavy" class="nintendo-font-big nintendo-red">second&nbsp;item &gt; first item</li>
             <li>third item</li>
         </ul>
         <ol>
@@ -43,10 +62,15 @@
             <li>second item</li>
             <li>third item</li>
         </ol>
+
+        <div id="content">
+            <p>This is a descendant of the div with the class "special"</p>
+        </div>
+
+        <p>This is not a descendant</p>
+
         <div>Home Services Contact</div>
-        <p>&copy; Nazareth College</p>
+        <p class="nintendo-red">&copy; Nazareth College</p>
     </main>
     <footer></footer>
-</body>
-
-</html>
+</body></html>
